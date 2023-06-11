@@ -1,0 +1,40 @@
+package football;
+class FootballTeams {
+private String sername;
+private String city;
+private int height;
+private double weight;
+
+public FootballTeams(String sername, String city, int height, double weight) {
+    this.sername = sername;
+    this.city = city;
+    this.height = height;
+    this.weight = weight;
+}
+
+@Override
+public String toString() {
+    return "FootballTeams{" +
+            "sername='" + sername + '\'' +
+            ", city='" + city + '\'' +
+            ", height=" + height +
+            ", weight=" + weight +
+            '}';
+}
+
+public int getHeight() {
+    return height;
+}
+
+public double getWeight() {
+    return weight;
+}
+
+public void setHeight(double height) {
+    this.height = (int) Math.round(height / 0.3937);
+}
+
+public String getSername() {
+    return sername;
+}
+}
